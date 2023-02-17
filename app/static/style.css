@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/Sora600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+	background-color: #f6f2ce;
+}
+.kettle {
+	position: relative;
+	width: 650px;
+	height: 709px;
+	margin: 70px auto 0;
+}
+.kettle .body {
+	width: 650px;
+	height: 709px;
+	background-image: url('img/kettle.png');
+}
+
+.kettle .water {
+	position: absolute;
+	left: 14px;
+	width: 423px;
+	height: 226px;
+	opacity: 0;
+	z-index: -1;
+}
+.kettle .water.top { top: 152px; }
+.kettle .water.mid { top: 265px; }
+.kettle .water.bot { top: 364px; }
+.kettle .water.calm     { background-image: url('img/calm_water.png'); }
+.kettle .water.troubled { background-image: url('img/troubled_water.gif'); }
+.kettle .water.boiling  { background-image: url('img/boiling_water.gif'); }
+
+.kettle .bottom {
+	position: absolute;
+	left: 24px;
+	bottom: 99px;
+	width: 408px;
+	height: 138px;
+	z-index: -2;
+}
+.kettle .bottom.active { background-image: url('img/bottom.gif'); }
+
+.kettle .t-display {
+	position: absolute;
+	width: 87px;
+	height: 37px;
+	left: 190px;
+	bottom: 36px;
+	text-align: center;
+	font-family: 'Sora', sans-serif;
+	line-height: 37px;
+	font-size: 26px;
+	color: #b10505;
+	opacity: 0;
+}
+
+.kettle .button {
+	position: absolute;
+	right: 109px;
+	bottom: 65px;
+	width: 108px;
+	height: 81px;
+	background-image: url('img/button.png');
+	cursor: pointer;
+}
+.kettle .button.active {
+	background-position: 0 -81px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Чайник</title>
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<div class="kettle">
+		<div class="water calm" data-max-water-level="{{ max_water_level }}"></div>
+		<div class="water troubled"></div>
+		<div class="water boiling"></div>
+		<div class="body"></div>
+		<div class="bottom"></div>
+		<div class="t-display">{{ t_water_beginning }}</div>
+		<div class="button"></div>
+	</div>
+</body>
+<script src="../static/script.js"></script>
+</html>
